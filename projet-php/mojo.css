@@ -1,0 +1,604 @@
+/* reset css  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIN RESET  */
+
+html, body {
+	height: 100%;
+}
+
+/* Header  */
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+	padding: 0 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: rgb(199, 217, 233);
+}
+
+.logo-img {
+	width: 80px;
+    padding: 8px 0 3px 0;
+}
+
+.nav-emotico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+}
+
+/* Fin Header  */
+
+
+/* Page de connexion */
+
+	/* logo */
+.img-accueil {
+	margin-top: 60px;
+	width: 250px;
+}
+
+.img-right{
+	display: none;
+}
+	/* formulaire */
+
+.left-side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-connexion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+#email, #mdp{
+	border: none;
+	width: 100%;
+	margin: 30px;
+	border-bottom: 5px solid rgba(0,0,0,1);
+	padding-left: 5px;
+	color: rgba(0,0,0,1);
+	outline: none;
+}
+
+	/* bouton connexion */
+
+.btn-connexion {
+	width: 100%;
+	margin: 30px;
+	align-self: center;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+  	touch-action: manipulation;
+}
+
+.btn-connexion:active {
+	box-shadow: 0px 0px 0px 0px;
+  	top: 5px;
+  	left: 5px;
+}
+
+	/* bouton inscription + bouton s'inscrire dans formulaire.php*/
+
+.inscription{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-inscription {
+	margin: 30px;
+	margin-bottom: 60px;
+	align-self: center;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+  	touch-action: manipulation;
+	}
+
+.btn-inscription:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+	}
+
+.btn-retour {
+	margin-bottom: 30px;
+}
+
+
+/* fin page de connexion */
+
+/* page de connexion desktop */
+
+@media (min-width: 800px){
+
+	.page1 {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	.img-right{
+		display: block;
+		width: 50%;
+		object-fit: scale-down;
+	}
+
+	.left-side{
+		width: 50%;
+		height: 100%;
+	}
+}
+
+/* fin page de connexion desktop */
+
+
+/* Formulaire inscription  */
+.title-form {
+	font-size: 20px;
+	text-align: center;
+	margin: 30px;
+	font-size: 30px;
+	letter-spacing: 5px;
+	
+}
+
+.bio {
+	padding: 50px;
+	letter-spacing: 2px;
+	
+}
+
+.form-inscription{
+	margin: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+#nom, #prenom, #pseudo, #email1, #mdp1, #sexe, #birth{
+	border: none;
+	width: 100%;
+	margin: 30px;
+	border-bottom: 5px solid rgba(0,0,0,1);
+	padding-left: 5px;
+	color: rgba(0,0,0,1);
+	outline: none;
+}
+
+/* page d'inscription desktop */
+
+@media (min-width: 800px){
+
+	.page1 {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.img-right{
+		display: block;
+		width: 50%;
+		object-fit: scale-down;
+	}
+	
+	.left-side{
+		width: 50%;
+		height: 100%;
+	}
+}
+	
+/* fin page d'inscription desktop */
+	
+
+
+
+
+/* Fin Formulaire inscription */
+
+/* Home page post */
+
+/* 1er partie home page */
+
+.add-post {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 25px 20px;
+	gap: 20px;
+	background: #f3f3f3;
+	padding: 30px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 20px 1px #f3f3f3;
+}
+
+.form-post {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 1px;
+}
+
+.form-msg {
+	border: none;
+	border: 5px solid black;
+	padding: 10px;
+	color: black;
+	outline: none;
+}
+
+.btn-msg {	
+	width: 80%;
+	align-self: center;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.btn-msg:active{
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+}
+
+.afficher-post {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.add-post strong{ 
+	font-size: 20px;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding: 30px;
+	margin-bottom: 30px;
+	border: 2px solid transparent;
+	box-shadow : 0px 0px 20px 1px #f3f3f3; 
+}
+
+.post h3, p.date-post {
+	font-size: 12px;
+	background-color: #f3f3f3 ;
+}
+
+.post h3 a{
+	font-size: 17px;
+	margin: 2px;
+	text-decoration: none;
+	font-weight: 800;
+	color: #000;
+}
+
+.date-post {
+	font-style: italic;
+	font-size: small;
+}
+
+.bio-post {
+	margin: 10px 0px 10px 0px;
+}
+
+.post a{
+	margin: 10px;
+}
+
+.post img {
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+@media (min-width: 800px){
+	.add-post{
+		margin: 0px 300px;
+	}
+
+	.post{
+		margin: 0px 400px;
+	}
+
+	.post img{ 
+		height: 600px;
+	}
+
+	.afficher-post{
+		margin: 0px 100px; 
+	}
+}
+
+
+/* Fin Home page post  */
+
+/* Home page post desktop */
+/* Fin Home page post desktop*/
+
+
+/* Home page commentaire */
+
+.commentaire-page {
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+    align-content: center;
+}
+
+.main-commentaire {
+    display: flex;
+    justify-content: center;
+    border: 2px solid transparent;
+    box-shadow : 0px 0px 20px 1px #f3f3f3; 
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.sub-main {
+    width: 90%;
+}
+
+.img-commentaire {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.commentaire-page-title {
+	font-size: larger;
+	font-weight: 600;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.like {
+    border: 0px;
+    background-color: white;
+}
+
+.zone-like {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.add-commentaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.zone-commentaire p {
+    margin-bottom: 20px;
+}
+
+.btn-commentaire{
+    margin-bottom: 30px;
+}
+
+
+
+/* Fin Home page commentaire  */
+
+/* Page profil */
+
+.profil-description {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 10%;
+    padding: 20px;
+	margin: 30px 50px;
+    font-weight: 700;
+	border: none;
+	border: 5px solid black;
+	padding: 10px;
+	outline: none;
+}
+
+.profil-description form {
+	order: 1;
+}
+
+.profil-publication {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	padding: 30px;
+	margin-bottom: 30px;
+	border: 2px solid transparent;
+	box-shadow : 0px 0px 20px 1px #f3f3f3; 
+}
+
+.profil-publication img {
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+	border-radius: 5px;
+}
+
+.prenom { 
+	font-size: 250%;
+}
+
+.modif-profil, .follow{
+	background-color: rgb(199, 217, 233);
+	padding: 5px;
+}
+
+.btn-order {
+	order: 1;
+}
+
+@media (min-width: 800px){
+
+	.profil-publication img{
+		height: 500px;
+		width: 800px;
+		padding: 50px;
+	}
+
+	.prenom { 
+		font-size: 600%;
+	}
+	
+} 
+
+
+/* Fin Page profil */
+
+
+
+/* Page message  */
+
+
+.titre-message h3 {
+	font-size: larger;
+	font-weight: 600;
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+.form-message, .form-message form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	gap: 20px;
+}
+
+.discussion {
+	border: 3px solid black;
+}
+
+#messages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px 0 0 calc(50% - 200px);
+	border: 1px solid gainsboro;
+	width: 400px;
+}
+
+.message {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.message h4 {
+	font-weight: 600;
+}
+
+.pseudo-by-me{
+	margin-top: 20px;
+}
+
+.pseudo-by-me, .message-by-me {
+	align-self: flex-end;
+	margin-right: 30px;
+}
+
+.message-by-me {
+	margin: 6px 50px 20px 0;
+}
+
+.message-by-you {
+	margin: 6px 0 20px 60px;
+}
+
+.pseudo-by-you {
+	margin-left: 30px;
+}
+
+
+/* Fin page message message  */
